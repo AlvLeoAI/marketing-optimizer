@@ -151,4 +151,3 @@ Backend: Google Cloud Run
 Frontend: Streamlit Cloud
 
 Author: AlvLeoAI
-Built for the Roverpass Technical Showcase.
