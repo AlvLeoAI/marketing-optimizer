@@ -1,0 +1,45 @@
+/* --- Global Settings --- */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* --- Custom Metric Cards (Fixed for Dark Mode) --- */
+div[data-testid="stMetric"] {
+    background-color: #f8f9fa !important;
+    /* Forced light background */
+    border: 1px solid #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #dee2e6;
+}
+
+/* --- FORCE DARK TEXT INSIDE CARDS --- */
+/* This fixes the "Invisible" problem */
+div[data-testid="stMetric"] label {
+    color: #6c757d !important;
+    /* Gray color for the small title */
+}
+
+div[data-testid="stMetric"] div[data-testid="stMetricValue"] {
+    color: #212529 !important;
+    /* Dark black color for the large number */
+}
+
+div[data-testid="stMetric"] div[data-testid="stMetricDelta"] {
+    /* The delta (arrow) handles itself, but we can adjust it if we want */
+    font-weight: bold;
+}
+
+/* --- Typography (Optional adjustments) --- */
+h1 {
+    font-weight: 700;
+    /* Let Streamlit decide the main title color for dark/light theme compatibility */
+}

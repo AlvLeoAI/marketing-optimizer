@@ -1,0 +1,43 @@
+--- Python & Virtual Environments ---
+
+pycache
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+--- Git & IDEs ---
+
+.git/
+.gitignore
+.vscode/
+.idea/
+
+--- Docker & Dev ---
+
+.devcontainer/
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+--- Documentation & Tests ---
+
+tests/
+ARCHITECTURE.md
+DEPLOYMENT.md
+README.md
+
+data/  <-- Uncomment if you DO NOT want to upload sample CSVs to production
+
+--- Security ---
+
+IMPORTANT: In real production, you should ignore .env and pass variables
+
+via Google Cloud Run configuration. For now, if your Dockerfile
+
+has "COPY .env .", leave this commented out so it gets copied.
+
+.env

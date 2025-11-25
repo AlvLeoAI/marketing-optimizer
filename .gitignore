@@ -1,0 +1,54 @@
+Virtual Environments
+
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+--- Environment Variables & Secrets (CRITICAL) ---
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+--- IDEs & Editors ---
+
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+--- Databases ---
+
+*.sqlite3
+*.db
+
+--- Logs & Coverage ---
+
+*.log
+coverage.xml
+*.cover
+.coverage
+htmlcov/
+
+--- Docker ---
+
+We ignore the devcontainer folder if we don't want to share our dev config
+
+.devcontainer/
+
+--- Testing ---
+
+.pytest_cache/
+.mypy_cache/
+
+--- Project Specific ---
+
+Ignore the data folder to avoid uploading large CSVs or sensitive customer data
+
+data/
